@@ -7,7 +7,8 @@
 /*! nav bar */
 
 .nav-bar {
-  max-width: 1200px;
+  max-width: 88%;
+  width: 1200px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -48,8 +49,56 @@
 }
 
 /*! nav bar end */
+/* -------Podcast------- */
+/*! Podcast */
+.podcast {
+  background-color: #1A0B2E;
 
+}
 
+.podcast-content {
+  max-width: 88%;
+  width: 1200px;
+  padding-top: 50px;
+  margin: 0 auto;
+  text-align: center;
+  color: #FFFFFF;
+  padding-bottom: 120px;
+}
+
+.podcast-content>h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.topic-2,
+.topic-1 {
+  opacity: 80%;
+}
+
+.podcast-content .topic-1 {
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 35px;
+}
+
+hr {
+  margin: 80px auto;
+  opacity: 10%;
+
+}
+
+.pod-view {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.box {}
+
+/*! Podcast end */
+/* -------------- */
 /*! nav banner*/
 .hero-banner {
   background: url(assets/hero-bg.png) center/cover no-repeat;
@@ -173,5 +222,18 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+  }
+
+  /*! podcast */
+  .pod-view {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+
+  .pod-about>h1{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
   }
 }

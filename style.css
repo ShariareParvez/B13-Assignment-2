@@ -63,7 +63,7 @@
   margin: 0 auto;
   text-align: center;
   color: #FFFFFF;
-  padding-bottom: 120px;
+  padding-bottom: 121px;
 }
 
 .podcast-content>h1 {
@@ -192,7 +192,7 @@ hr {
   max-width: 88%;
   width: 1200px;
   margin: 0 auto;
-  padding-bottom: 120px;
+  padding-bottom: 121px;
 }
 
 .content-grid>* {
@@ -203,7 +203,7 @@ hr {
 }
 
 .content-grid {
-  padding-top: 120px;
+  padding-top: 121px;
   display: grid;
   gap: 30px;
   grid-template-areas:
@@ -265,7 +265,7 @@ hr {
 .episodes-content>h1 {
   color: #FFFFFF;
   text-align: center;
-  padding-top: 120px;
+  padding-top: 121px;
   margin-bottom: 40px;
 }
 
@@ -286,7 +286,7 @@ hr {
 .card {
   background-color: #230E3D;
   border-radius: 15px;
-  margin-bottom: 120px;
+  margin-bottom: 121px;
 }
 
 .card-1 .video {
@@ -313,6 +313,38 @@ hr {
 }
 
 /*! episode*/
+
+/*! host*/
+.host-content {
+  max-width: 88%;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  background-color: #35116541;
+  border-radius: 35px;
+}
+
+.host-info {
+  color: #FFFFFF;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.social img {
+  padding: 10px;
+  border: 1px solid #533C72;
+  border-radius: 50%;
+}
+
+/*! host*/
 
 
 
@@ -414,5 +446,25 @@ hr {
     padding-top: 20px;
     margin-bottom: 17px;
     font-size: 33px;
+  }
+
+  /* host */
+  .host-content {
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    gap: 24px;
+    background-color: #35116541;
+    border-radius: 35px;
+  }
+
+  .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
   }
 }

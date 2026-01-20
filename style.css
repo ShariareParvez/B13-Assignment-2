@@ -3,7 +3,8 @@
   margin: 0;
   box-sizing: border-box;
 }
-body{
+
+body {
   background-color: #1A0B2E;
 }
 
@@ -114,8 +115,16 @@ hr {
   max-width: 550px;
 }
 
+.mocro {
+  max-width: 100%;
+}
+
 .hero-circle {
   position: relative;
+}
+
+.hero-circle>img {
+  max-width: 100%;
 }
 
 .badge {
@@ -400,21 +409,57 @@ footer {
 
 /*! footer*/
 
-
-
-
+@media screen and (min-width:350px) and (max-width:576px) {
+  .mocro {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+  }
+}
 
 
 @media screen and (max-width:576px) {
-
+  
   .hero-banner {
-    background: url(assets/hero-bg.png) center/cover no-repeat;
-    background-size: contain;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    justify-items: center;
+      background: url(assets/bg-small.png) center/cover no-repeat;
+      text-align: center;
+      align-items: center;
+      padding: 101px 0;
+      display: flex;
+      justify-content: center;
+    }
+
+  
+  .badge {
+    font-size: 16px;
+    top: 15px;
+    right: 50px;
+    box-shadow: 0 3px 27px #00ff8850;
   }
+
+  .mocro {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25%;
+  }
+
+    .hero-circle>img {
+      max-width: 75%;
+    }
+
+  /* @media screen and (min-width:350px) and (max-width:576px) {
+  .mocro {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25%;
+  }
+} */
 
   .hero-circle {
     max-width: 100%;
@@ -545,6 +590,12 @@ footer {
     opacity: 60%;
     margin-top: 26px;
   }
+
+  .footer-content>h1 {
+    font-size: 3rem;
+    margin-bottom: 7px;
+  }
+
   .pod-media {
     display: flex;
     align-items: center;
@@ -555,3 +606,5 @@ footer {
     gap: 16px;
   }
 }
+
+

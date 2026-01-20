@@ -97,6 +97,7 @@ hr {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 40px;
+  align-items: center;
 }
 
 /*! Podcast end */
@@ -411,24 +412,28 @@ footer {
 
 /* ---------------animation------------------- */
 
-.hero-circle .mocro{
+.hero-circle .mocro {
   animation: bit 1s ease-in-out infinite;
 }
 
 @keyframes bit {
-  0%{
+  0% {
     transform: translate(-50%, -50%) scale(1);
   }
-  25%{
+
+  25% {
     transform: translate(-50%, -50%) scale(1.2);
   }
-  50%{
+
+  50% {
     transform: translate(-50%, -50%) scale(1);
   }
-  100%{
+
+  100% {
     transform: translate(-50%, -50%) scale(1.2);
   }
-  100%{
+
+  100% {
     transform: translate(-50%, -50%) scale(1);
   }
 }
@@ -447,17 +452,17 @@ footer {
 
 
 @media screen and (max-width:576px) {
-  
-  .hero-banner {
-      background: url(assets/bg-small.png) center/cover no-repeat;
-      text-align: center;
-      align-items: center;
-      padding: 101px 0;
-      display: flex;
-      justify-content: center;
-    }
 
-  
+  .hero-banner {
+    background: url(assets/bg-small.png) center/cover no-repeat;
+    text-align: center;
+    align-items: center;
+    padding: 101px 0;
+    display: flex;
+    justify-content: center;
+  }
+
+
   .badge {
     font-size: 16px;
     top: 15px;
@@ -473,9 +478,9 @@ footer {
     width: 25%;
   }
 
-    .hero-circle>img {
-      max-width: 75%;
-    }
+  .hero-circle>img {
+    max-width: 75%;
+  }
 
   /* @media screen and (min-width:350px) and (max-width:576px) {
   .mocro {
@@ -584,6 +589,7 @@ footer {
     gap: 24px;
     background-color: #35116541;
     border-radius: 35px;
+    margin-top: 28px;
   }
 
   .social {
@@ -618,9 +624,19 @@ footer {
   }
 
   .footer-content>h1 {
+    font-size: 4rem;
+    margin-bottom: 7px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* .footer-content>h1 {
     font-size: 3rem;
     margin-bottom: 7px;
-  }
+  } */
 
   .pod-media {
     display: flex;
@@ -632,5 +648,3 @@ footer {
     gap: 16px;
   }
 }
-
-

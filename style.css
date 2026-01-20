@@ -409,6 +409,32 @@ footer {
 
 /*! footer*/
 
+/* ---------------animation------------------- */
+
+.hero-circle .mocro{
+  animation: bit 1s ease-in-out infinite;
+}
+
+@keyframes bit {
+  0%{
+    transform: translate(-50%, -50%) scale(1);
+  }
+  25%{
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+  50%{
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100%{
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+  100%{
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+/* -----------------animation */
+
 @media screen and (min-width:350px) and (max-width:576px) {
   .mocro {
     position: absolute;
